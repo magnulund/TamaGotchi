@@ -62,7 +62,7 @@ while (true)
         }
         if (pet.GetAlive() == false)
         {
-            Console.WriteLine("Your");
+            Console.WriteLine($"{pet._name} has died :(");
             break;
         }
     

@@ -20,7 +20,7 @@ public class Tamagotchi
 
     public void Feed()
     {
-        _hunger -=4;
+        _hunger -= Random.Shared.Next(1, 5);
         
         Tick();
         if (_hunger < 0)
@@ -72,7 +72,7 @@ public class Tamagotchi
     }
     private void ReduceBoredom()
     {
-        _boredom -=4;
+        _boredom -= Random.Shared.Next(1, 5);
         if (_boredom < 0)
         {
             _boredom = 0;
